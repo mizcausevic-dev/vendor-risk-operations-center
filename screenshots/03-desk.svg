@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <rect width="1600" height="900" fill="#07111A"/>
+  <rect x="70" y="70" width="1460" height="760" rx="30" fill="#0F1B2B" stroke="#23364A"/>
+  <text x="110" y="130" fill="#8FB7FF" font-family="Segoe UI, Arial" font-size="20">VENDOR REVIEW DESK</text>
+  <text x="110" y="182" fill="#FFFFFF" font-family="Georgia, serif" font-size="44">Critical suppliers and renewal windows</text>
+  <rect x="110" y="226" width="1380" height="72" rx="18" fill="#111E2F"/>
+  <rect x="110" y="320" width="1380" height="96" rx="18" fill="#122234"/>
+  <rect x="110" y="430" width="1380" height="96" rx="18" fill="#122234"/>
+  <rect x="110" y="540" width="1380" height="96" rx="18" fill="#122234"/>
+  <rect x="110" y="650" width="1380" height="96" rx="18" fill="#122234"/>
+  <text x="146" y="271" fill="#95A7C4" font-family="Segoe UI, Arial" font-size="18">Vendor</text>
+  <text x="550" y="271" fill="#95A7C4" font-family="Segoe UI, Arial" font-size="18">Tier</text>
+  <text x="690" y="271" fill="#95A7C4" font-family="Segoe UI, Arial" font-size="18">State</text>
+  <text x="910" y="271" fill="#95A7C4" font-family="Segoe UI, Arial" font-size="18">Posture</text>
+  <text x="1060" y="271" fill="#95A7C4" font-family="Segoe UI, Arial" font-size="18">SLA Risk</text>
+  <text x="1230" y="271" fill="#95A7C4" font-family="Segoe UI, Arial" font-size="18">Actions</text>
+  <text x="146" y="376" fill="#FFFFFF" font-family="Segoe UI, Arial" font-size="26" font-weight="700">Atlas Cloud Security</text>
+  <text x="146" y="484" fill="#FFFFFF" font-family="Segoe UI, Arial" font-size="26" font-weight="700">Crest Analytics</text>
+  <text x="146" y="594" fill="#FFFFFF" font-family="Segoe UI, Arial" font-size="26" font-weight="700">Northwind CRM Systems</text>
+  <text x="146" y="704" fill="#FFFFFF" font-family="Segoe UI, Arial" font-size="26" font-weight="700">Meridian Content Ops</text>
+  <rect x="674" y="346" width="154" height="38" rx="19" fill="#3A201B"/>
+  <rect x="674" y="456" width="154" height="38" rx="19" fill="#143143"/>
+  <rect x="674" y="566" width="154" height="38" rx="19" fill="#3F2030"/>
+  <rect x="674" y="676" width="154" height="38" rx="19" fill="#18382C"/>
+  <text x="714" y="372" fill="#FFB58B" font-family="Segoe UI, Arial" font-size="18">Blocked</text>
+  <text x="708" y="482" fill="#8CE2FF" font-family="Segoe UI, Arial" font-size="18">In review</text>
+  <text x="704" y="592" fill="#FFB2D0" font-family="Segoe UI, Arial" font-size="18">Escalated</text>
+  <text x="726" y="702" fill="#82EBBA" font-family="Segoe UI, Arial" font-size="18">Ready</text>
+</svg>
