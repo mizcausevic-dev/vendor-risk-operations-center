@@ -1,0 +1,403 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(255, 182, 92, 0.12), transparent 30%),
+    radial-gradient(circle at 80% 0%, rgba(87, 208, 255, 0.14), transparent 24%),
+    #07111a;
+  color: #ecf2ff;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #07111a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#root {
+  width: 100%;
+}
+
+.app-shell {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 40px 24px 72px;
+}
+
+.hero-panel,
+.scorecard-grid,
+.dashboard-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.hero-panel {
+  grid-template-columns: 1.25fr 1fr;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+
+.hero-copy,
+.hero-card,
+.panel,
+.scorecard {
+  border: 1px solid rgba(143, 155, 180, 0.18);
+  background: linear-gradient(180deg, rgba(9, 17, 29, 0.92), rgba(11, 18, 31, 0.86));
+  box-shadow: 0 24px 80px rgba(2, 8, 18, 0.35);
+  border-radius: 28px;
+}
+
+.hero-copy {
+  padding: 34px;
+}
+
+.hero-card {
+  padding: 30px;
+}
+
+.kicker,
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  color: #8fb7ff;
+  margin: 0 0 14px;
+}
+
+.hero-copy h1,
+.panel h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  line-height: 0.96;
+  max-width: 10ch;
+}
+
+.lead {
+  color: #b8c6de;
+  margin-top: 18px;
+  max-width: 62ch;
+  font-size: 1.02rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 26px;
+  flex-wrap: wrap;
+}
+
+.primary-link,
+.secondary-link {
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.primary-link {
+  background: linear-gradient(135deg, #ffb65c, #ff8b56);
+  color: #111827;
+}
+
+.secondary-link {
+  border: 1px solid rgba(143, 155, 180, 0.26);
+  color: #d6deef;
+}
+
+.metrics-grid,
+.scorecard-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.metric-card,
+.scorecard {
+  padding: 20px;
+}
+
+.metric-card {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  display: grid;
+  gap: 8px;
+}
+
+.metric-card span,
+.scorecard span {
+  color: #9bb0d0;
+}
+
+.metric-card strong,
+.scorecard strong {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.metric-card small {
+  color: #7f90aa;
+}
+
+.scorecard-grid {
+  margin-bottom: 20px;
+}
+
+.scorecard {
+  display: grid;
+  gap: 10px;
+}
+
+.dashboard-grid {
+  grid-template-columns: 1.3fr 0.9fr;
+  margin-bottom: 20px;
+}
+
+.panel {
+  padding: 26px;
+}
+
+.panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.panel h2 {
+  font-size: 1.5rem;
+  line-height: 1.05;
+  max-width: 18ch;
+}
+
+.annotation {
+  color: #8c9ab2;
+  font-size: 0.88rem;
+  max-width: 18ch;
+  text-align: right;
+}
+
+.trend-chart {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.chart-grid {
+  stroke: rgba(143, 155, 180, 0.16);
+  stroke-dasharray: 4 6;
+}
+
+.chart-label {
+  fill: #92a7c8;
+  font-size: 12px;
+}
+
+.tier-bars,
+.workflow-stack,
+.exception-list,
+.queue-list {
+  display: grid;
+  gap: 14px;
+}
+
+.tier-bar-row,
+.workflow-item,
+.exception-card,
+.queue-card {
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(143, 155, 180, 0.1);
+}
+
+.tier-bar-row {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+}
+
+.bar-track {
+  width: 100%;
+  height: 12px;
+  background: rgba(143, 155, 180, 0.12);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.vendor-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+}
+
+.vendor-table th,
+.vendor-table td {
+  text-align: left;
+  padding: 14px 12px;
+  border-top: 1px solid rgba(143, 155, 180, 0.12);
+}
+
+.vendor-table th {
+  color: #90a4c5;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.vendor-table td span {
+  display: block;
+  color: #90a4c5;
+  font-size: 0.88rem;
+}
+
+.state-pill {
+  display: inline-flex;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.state-in-review {
+  background: rgba(87, 208, 255, 0.12);
+  color: #8ce2ff;
+}
+
+.state-blocked,
+.priority {
+  background: rgba(255, 143, 86, 0.12);
+  color: #ffb58b;
+}
+
+.state-ready {
+  background: rgba(80, 209, 145, 0.12);
+  color: #82ebba;
+}
+
+.state-escalated {
+  background: rgba(238, 109, 161, 0.12);
+  color: #ffb2d0;
+}
+
+.workflow-item,
+.exception-card,
+.queue-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 16px 18px;
+}
+
+.workflow-item strong,
+.exception-card strong,
+.queue-card strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.workflow-item p,
+.exception-card p,
+.queue-card p {
+  margin: 0;
+  color: #92a7c8;
+}
+
+.workflow-item span {
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #ffb65c;
+  font-weight: 700;
+}
+
+.exception-meta,
+.queue-card b {
+  display: grid;
+  justify-items: end;
+  gap: 4px;
+}
+
+.exception-meta span,
+.exception-meta small,
+.queue-card p {
+  color: #8c9ab2;
+}
+
+.priority {
+  display: inline-flex;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 0.78rem;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 1100px) {
+  .hero-panel,
+  .dashboard-grid,
+  .metrics-grid,
+  .scorecard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .annotation {
+    text-align: left;
+  }
+
+  .panel h2 {
+    max-width: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .app-shell {
+    padding: 22px 14px 48px;
+  }
+
+  .hero-copy,
+  .hero-card,
+  .panel,
+  .scorecard {
+    border-radius: 22px;
+    padding: 20px;
+  }
+
+  .hero-copy h1 {
+    max-width: none;
+  }
+
+  .vendor-table {
+    min-width: 560px;
+  }
+
+  .workflow-item,
+  .exception-card,
+  .queue-card {
+    flex-direction: column;
+  }
+
+  .exception-meta,
+  .queue-card b {
+    justify-items: start;
+  }
+}
