@@ -84,7 +84,7 @@ flowchart LR
 ## Local Run
 
 ```powershell
-Set-Location "C:\Users\chaus\dev\repos\vendor-risk-operations-center"
+cd vendor-risk-operations-center
 npm install
 npm test
 npm run build
